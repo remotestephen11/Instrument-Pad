@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A–H Instrument Pad</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app">
+    <header>
+      <div>
+        <h1>Instrument Pads (A–H)</h1>
+        <p class="hint">
+          Click any box (or press keys A–H). Each letter triggers a different instrument sound.
+          If sound doesn’t play on first click, click once more (browser audio policy).
+        </p>
+      </div>
+
+      <div class="status" id="status">
+        Audio: Not started<br />
+        Controls: Mouse / Touch / Keyboard
+      </div>
+    </header>
+
+    <section class="grid" id="grid">
+      <button class="pad" data-key="A" data-instrument="Kick" aria-label="A Kick">
+        <div class="letter">A</div>
+        <div class="label">Kick</div>
+      </button>
+
+      <button class="pad" data-key="B" data-instrument="Snare" aria-label="B Snare">
+        <div class="letter">B</div>
+        <div class="label">Snare</div>
+      </button>
+
+      <button class="pad" data-key="C" data-instrument="Hi-Hat" aria-label="C Hi-Hat">
+        <div class="letter">C</div>
+        <div class="label">Hi-Hat</div>
+      </button>
+
+      <button class="pad" data-key="D" data-instrument="Piano" aria-label="D Piano">
+        <div class="letter">D</div>
+        <div class="label">Piano</div>
+      </button>
+
+      <button class="pad" data-key="E" data-instrument="Trumpet" aria-label="E Trumpet">
+        <div class="letter">E</div>
+        <div class="label">Trumpet</div>
+      </button>
+
+      <button class="pad" data-key="F" data-instrument="Bass" aria-label="F Bass">
+        <div class="letter">F</div>
+        <div class="label">Bass</div>
+      </button>
+
+      <button class="pad" data-key="G" data-instrument="Synth" aria-label="G Synth">
+        <div class="letter">G</div>
+        <div class="label">G Synth</div>
+      </button>
+
+      <button class="pad" data-key="H" data-instrument="Clap" aria-label="H Clap">
+        <div class="letter">H</div>
+        <div class="label">Clap</div>
+      </button>
+    </section>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
