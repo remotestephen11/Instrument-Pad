@@ -12,7 +12,7 @@
       <div>
         <h1>Instrument Pads (A–H)</h1>
         <p class="hint">
-          Click any box (or press keys A–H). Each letter triggers a different instrument sound.
+          Click any box (or press keys A–H). Each letter triggers a matching instrument sound.
           If sound doesn’t play on first click, click once more (browser audio policy).
         </p>
       </div>
@@ -24,43 +24,159 @@
     </header>
 
     <section class="grid" id="grid">
+      <!-- A = Kick Drum -->
       <button class="pad" data-key="A" data-instrument="Kick" aria-label="A Kick">
-        <div class="letter">A</div>
+        <div class="top">
+          <div class="letter">A</div>
+          <div class="icon" aria-hidden="true">
+            <!-- Kick Drum Icon -->
+            <svg viewBox="0 0 64 64" role="img">
+              <circle cx="32" cy="32" r="20"></circle>
+              <circle cx="32" cy="32" r="10"></circle>
+              <line x1="12" y1="24" x2="6" y2="20"></line>
+              <line x1="52" y1="24" x2="58" y2="20"></line>
+              <line x1="18" y1="50" x2="14" y2="58"></line>
+              <line x1="46" y1="50" x2="50" y2="58"></line>
+            </svg>
+          </div>
+        </div>
         <div class="label">Kick</div>
       </button>
 
+      <!-- B = Snare -->
       <button class="pad" data-key="B" data-instrument="Snare" aria-label="B Snare">
-        <div class="letter">B</div>
+        <div class="top">
+          <div class="letter">B</div>
+          <div class="icon" aria-hidden="true">
+            <!-- Snare Drum Icon -->
+            <svg viewBox="0 0 64 64" role="img">
+              <ellipse cx="32" cy="18" rx="18" ry="8"></ellipse>
+              <path d="M14 18v24c0 5 8 10 18 10s18-5 18-10V18"></path>
+              <line x1="18" y1="28" x2="46" y2="28"></line>
+              <line x1="18" y1="36" x2="46" y2="36"></line>
+              <line x1="18" y1="44" x2="46" y2="44"></line>
+            </svg>
+          </div>
+        </div>
         <div class="label">Snare</div>
       </button>
 
+      <!-- C = Hi-Hat -->
       <button class="pad" data-key="C" data-instrument="Hi-Hat" aria-label="C Hi-Hat">
-        <div class="letter">C</div>
+        <div class="top">
+          <div class="letter">C</div>
+          <div class="icon" aria-hidden="true">
+            <!-- Hi-Hat Icon -->
+            <svg viewBox="0 0 64 64" role="img">
+              <path d="M16 18c6-6 26-6 32 0"></path>
+              <path d="M16 26c6-6 26-6 32 0"></path>
+              <line x1="32" y1="26" x2="32" y2="54"></line>
+              <path d="M22 54h20"></path>
+              <path d="M26 54l-4 6"></path>
+              <path d="M38 54l4 6"></path>
+            </svg>
+          </div>
+        </div>
         <div class="label">Hi-Hat</div>
       </button>
 
+      <!-- D = Piano -->
       <button class="pad" data-key="D" data-instrument="Piano" aria-label="D Piano">
-        <div class="letter">D</div>
+        <div class="top">
+          <div class="letter">D</div>
+          <div class="icon" aria-hidden="true">
+            <!-- Piano Keys Icon -->
+            <svg viewBox="0 0 64 64" role="img">
+              <rect x="12" y="18" width="40" height="30" rx="4"></rect>
+              <line x1="20" y1="18" x2="20" y2="48"></line>
+              <line x1="28" y1="18" x2="28" y2="48"></line>
+              <line x1="36" y1="18" x2="36" y2="48"></line>
+              <line x1="44" y1="18" x2="44" y2="48"></line>
+              <rect x="23" y="18" width="6" height="18"></rect>
+              <rect x="35" y="18" width="6" height="18"></rect>
+            </svg>
+          </div>
+        </div>
         <div class="label">Piano</div>
       </button>
 
+      <!-- E = Trumpet -->
       <button class="pad" data-key="E" data-instrument="Trumpet" aria-label="E Trumpet">
-        <div class="letter">E</div>
+        <div class="top">
+          <div class="letter">E</div>
+          <div class="icon" aria-hidden="true">
+            <!-- Trumpet Icon -->
+            <svg viewBox="0 0 64 64" role="img">
+              <path d="M10 34h18l10-10h6v20h-6l-10-10H10z"></path>
+              <rect x="44" y="22" width="6" height="20"></rect>
+              <line x1="22" y1="34" x2="22" y2="48"></line>
+              <path d="M18 48c0 4 8 4 8 0"></path>
+              <circle cx="32" cy="22" r="2"></circle>
+              <circle cx="36" cy="22" r="2"></circle>
+              <circle cx="40" cy="22" r="2"></circle>
+            </svg>
+          </div>
+        </div>
         <div class="label">Trumpet</div>
       </button>
 
+      <!-- F = Bass -->
       <button class="pad" data-key="F" data-instrument="Bass" aria-label="F Bass">
-        <div class="letter">F</div>
+        <div class="top">
+          <div class="letter">F</div>
+          <div class="icon" aria-hidden="true">
+            <!-- Bass Guitar Icon -->
+            <svg viewBox="0 0 64 64" role="img">
+              <path d="M40 10c6 0 10 4 10 10 0 5-3 9-8 10l-10 2"></path>
+              <path d="M22 22l20 20"></path>
+              <path d="M12 40c-4 4-4 10 0 14s10 4 14 0l6-6-14-14z"></path>
+              <line x1="44" y1="12" x2="54" y2="2"></line>
+              <circle cx="54" cy="2" r="1.5"></circle>
+            </svg>
+          </div>
+        </div>
         <div class="label">Bass</div>
       </button>
 
+      <!-- G = Synth -->
       <button class="pad" data-key="G" data-instrument="Synth" aria-label="G Synth">
-        <div class="letter">G</div>
-        <div class="label">G Synth</div>
+        <div class="top">
+          <div class="letter">G</div>
+          <div class="icon" aria-hidden="true">
+            <!-- Synth Icon -->
+            <svg viewBox="0 0 64 64" role="img">
+              <rect x="12" y="18" width="40" height="28" rx="6"></rect>
+              <circle cx="22" cy="28" r="3"></circle>
+              <circle cx="32" cy="28" r="3"></circle>
+              <circle cx="42" cy="28" r="3"></circle>
+              <line x1="16" y1="40" x2="48" y2="40"></line>
+              <line x1="20" y1="40" x2="20" y2="46"></line>
+              <line x1="28" y1="40" x2="28" y2="46"></line>
+              <line x1="36" y1="40" x2="36" y2="46"></line>
+              <line x1="44" y1="40" x2="44" y2="46"></line>
+            </svg>
+          </div>
+        </div>
+        <div class="label">Synth</div>
       </button>
 
+      <!-- H = Clap -->
       <button class="pad" data-key="H" data-instrument="Clap" aria-label="H Clap">
-        <div class="letter">H</div>
+        <div class="top">
+          <div class="letter">H</div>
+          <div class="icon" aria-hidden="true">
+            <!-- Clap/Hands Icon -->
+            <svg viewBox="0 0 64 64" role="img">
+              <path d="M20 34v-10c0-2 2-3 4-2l4 2"></path>
+              <path d="M28 24v-8c0-2 2-3 4-2l2 2"></path>
+              <path d="M34 18c0-2 2-3 4-2l2 2v16"></path>
+              <path d="M40 22c0-2 2-3 4-2l2 2v18c0 10-6 16-16 16-8 0-14-6-14-14v-8"></path>
+              <line x1="14" y1="18" x2="10" y2="14"></line>
+              <line x1="16" y1="12" x2="14" y2="6"></line>
+              <line x1="22" y1="10" x2="22" y2="4"></line>
+            </svg>
+          </div>
+        </div>
         <div class="label">Clap</div>
       </button>
     </section>
@@ -68,4 +184,4 @@
 
   <script src="script.js" defer></script>
 </body>
-</html>
+</html> 
